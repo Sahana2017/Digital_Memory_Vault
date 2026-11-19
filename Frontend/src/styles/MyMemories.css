@@ -1,0 +1,141 @@
+
+.my-memories-page {
+  min-height: 72vh;
+  padding: 30px 5%;
+  background: #f5f6fb;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.my-memories-page h2 {
+  margin: 5px 0 32px;
+  color: #171717;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.memories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  align-items: start;
+}
+
+.memory-card {
+  min-width: 0;
+  padding: 22px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.memory-card-media {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: #eee;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.memory-card h3 {
+  margin: 12px 0 18px;
+  text-align: center;
+  font-size: 21px;
+  color: #292929;
+  overflow-wrap: anywhere;
+}
+
+.memory-card p {
+  margin: 12px 0;
+  color: #444;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+
+.memory-description {
+  line-height: 1.5;
+}
+
+.memory-no-media {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0edff;
+  color: #555;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.memory-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.memory-btn,
+.dashboard-btn {
+  border: none;
+  border-radius: 6px;
+  background: #087cf0;
+  color: white;
+  padding: 12px 17px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.memory-btn:hover {
+  background: #0665c5;
+}
+
+.delete-btn {
+  background: #087cf0;
+}
+
+.delete-btn:hover {
+  background: #d9273b;
+}
+
+.dashboard-btn {
+  margin-top: 25px;
+  background: #e52f45;
+  min-width: 184px;
+}
+
+.dashboard-btn:hover {
+  background: #c92136;
+}
+
+.empty-memories {
+  padding: 30px;
+}
+
+.memory-message {
+  text-align: center;
+}
+
+.memory-error {
+  color: #d9273b;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .my-memories-page {
+    padding: 24px 16px;
+  }
+
+  .memories-container {
+    grid-template-columns: 1fr;
+  }
+
+  .memory-actions {
+    justify-content: space-around;
+  }
+}

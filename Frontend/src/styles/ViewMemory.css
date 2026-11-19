@@ -1,0 +1,60 @@
+
+.view-memory-file-item {
+  margin-bottom: 28px;
+  padding: 15px;
+  background: #fafaff;
+  border-radius: 12px;
+  border: 1px solid #e8e5f5;
+}
+
+.delete-attachment-btn {
+  display: block;
+  margin: 10px auto 0;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #e74c3c;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-attachment-btn:hover {
+  background: #c0392b;
+}
+
+.delete-attachment-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.view-memory-document {
+  padding: 20px;
+  background: #f5f5ff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.attachment-success {
+  color: #16803c !important;
+  text-align: center;
+  font-weight: 600;
+}
+
+.attachment-error {
+  color: #d63031 !important;
+  text-align: center;
+  font-weight: 600;
+}
+
+.no-attachments {
+  text-align: center !important;
+  padding: 20px;
+  color: #777 !important;
+}
+
+.view-memory-details {
+  margin-top: 20px;
+}
